@@ -1,3 +1,5 @@
+package blocoDeNotas;
+
 public class Main {
     public static void main(String[] args) {
             BlocoDeNotas bloco = new BlocoDeNotas();
