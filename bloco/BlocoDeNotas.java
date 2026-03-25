@@ -1,3 +1,5 @@
+package bloco;
+
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -70,6 +72,6 @@ public class BlocoDeNotas {
     
     @Override
     public String toString() {
-        return "BlocoDeNotas com " + anotacoes.size() + " anotações (incluindo removidas).";
+        return "bloco.BlocoDeNotas com " + anotacoes.size() + " anotações (incluindo removidas).";
     }
 }
