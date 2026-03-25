@@ -1,0 +1,24 @@
+Implemente as classes que permitem o desenvolvimento de um site de comércio eletrônico. Não é para fazer o Main (com o front/view), só as classes do problema. Detalhes abaixo.
+
+O site vende 3 tipos de produtos, que guardam as informações descritas abaixo:
+Livro: código, preço, descrição, autor, editora.
+Eletrônico: código, preço, descrição, voltagem (110 ou 220), garantia (boolean).
+
+// em comum - código, preço e descrição - deve-se criar uma subclasse quando objetos compartilham atributos.
+
+//lista de Produto, posso colocar mais de um tipo de objeto
+
+A descrição de um livro deve conter: título do livro, autor e editora
+A descrição de um eletrônico deve conter o tipo do eletrônico, a voltagem e se tem garantia (true/false).
+
+
+//metodo da classe mão e override em cada uma
+
+A  classe CestaDeCompras também deve ser desenvolvida. Esta classe mantém uma coleção dos produtos inseridos na cesta de uma compra. A cesta deve permitir inserir produtos de quaisquer dos tipos acima, com as seguintes funcionalidades:
+
+- adicionarProduto(Produto produto) - deve retornar um boolean para indicar se a operação foi realizada ou não com sucesso
+- listarProdutos() - aqui deve retornar uma String com descrição e preço de cada produto adicionado na cesta.
+- calcularPrecoTotal() - deve retornar um double com o valor total da compra.
+
+DICA:
+- use herança
