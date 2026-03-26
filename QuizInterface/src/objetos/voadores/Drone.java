@@ -3,7 +3,7 @@ package objetos.voadores;
 public class Drone implements Voador{
     private String tipo;
 
-    public Drone(String tipo) {
+    public Drone() {
         super();
         this.tipo = tipo;
     }

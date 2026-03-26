@@ -52,4 +52,6 @@ public class AtividadeDeFerias implements Comparable<AtividadeDeFerias> {
         if (this.nota < outra.nota) return 1;
         if (this.nota > outra.nota) return -1;
         return 0;    }
+
+
 }
