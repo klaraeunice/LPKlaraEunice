@@ -2,23 +2,23 @@ package diarioDeFerias;
 
 import java.util.Objects;
 
-public class AtividadeDeFerias {
+public class AtividadeDeFerias implements Comparable<AtividadeDeFerias> {
 
-    private long descricao;
-    private long nota;
+    private String descricao;
+    private double nota;
     private String tag;
 
-    public AtividadeDeFerias(long descricao, long nota, String tag) {
+    public AtividadeDeFerias(String descricao, double nota, String tag) {
         this.descricao = descricao;
         this.nota = nota;
         this.tag = tag;
     }
 
-    public long getDescricao() {
+    public String getDescricao() {
         return descricao;
     }
 
-    public long getNota() {
+    public double getNota() {
         return nota;
     }
 
@@ -46,4 +46,10 @@ public class AtividadeDeFerias {
     public int hashCode() {
         return Objects.hash(descricao, nota, tag);
     }
+
+    @Override
+    public int compareTo(AtividadeDeFerias outra) {
+        if (this.nota < outra.nota) return 1;
+        if (this.nota > outra.nota) return -1;
+        return 0;    }
 }
