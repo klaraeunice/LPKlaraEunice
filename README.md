@@ -14,6 +14,8 @@ O projeto está organizado em módulos independentes:
 * **AtividadeBlocoDeNotas**: Sistema de gestão de anotações com tratamento de exceções personalizadas e `ArrayList`.
 * **SimuladoProva3**: Implementação de sistema de Cesta de Compras.
 * **diarioDeFerias**: Registo de atividades diárias.
+*  **ObjetosVoadores**: Registo de diferentes objetos voadores através do uso de Interface.
+
 
 ## 🚀 Como Executar
 1. Abra o projeto no IntelliJ.
