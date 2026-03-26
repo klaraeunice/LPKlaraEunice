@@ -41,7 +41,7 @@ public class BlocoDeNotas {
     }
 
     
-    public void removeAnotacao(int id) throws AnotacaoNaoEncontradaException{
+    public void removeAnotacao(int id) throws AnotacaoNaoEncontradaException {
         for (Anotacao nota : anotacoes) {
             if (nota.getId() == id & !nota.isRemovida()) {
                 nota.remove();

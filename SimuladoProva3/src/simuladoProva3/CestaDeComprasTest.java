@@ -1,4 +1,4 @@
-package Simulado3;
+package simuladoProva3;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
