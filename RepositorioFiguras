@@ -1,0 +1,30 @@
+package figurasGeometricas:
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Repositorio Figuras{
+
+private List<FigurasGeometricas> figuras = new ArrayList<>();
+
+public boolean adicionaFigura(FigurasGeometricas figura){
+return figuras.add(figura);
+}
+
+public FigurasGeometricas removeFigura(int posicao){
+return figuras.remove(posicao);
+}
+
+public void fazCalcularArea(int posicao){
+return figuras.get(posicao).calcularArea();
+}
+
+public void fazCalcularPerimetro(int posicao){
+return figuras.get(posicao).calcularPerimetro()
+}
+
+public String getTipoFigura(){
+return figuras.get(tipo);
+}
+}
+
