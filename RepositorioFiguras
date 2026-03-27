@@ -1,30 +1,26 @@
-package figurasGeometricas:
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class Repositorio Figuras{
+public class RepositorioDeFiguras2D {
+    private List<FiguraGeometrica2D> figuras = new ArrayList<>();
 
-private List<FigurasGeometricas> figuras = new ArrayList<>();
+    public void adicionar(FiguraGeometrica2D figura) {
+        figuras.add(figura);
+    }
 
-public boolean adicionaFigura(FigurasGeometricas figura){
-return figuras.add(figura);
+    public FiguraGeometrica2D remover(int posicao) {
+        return figuras.remove(posicao);
+    }
+
+    public double recuperarArea(int posicao) {
+        return figuras.get(posicao).calculaArea();
+    }
+
+    public double recuperarPerimetro(int posicao) {
+        return figuras.get(posicao).calculaPerimetro();
+    }
+
+    public String recuperarTipo(int posicao) {
+        return figuras.get(posicao).getTipo();
+    }
 }
-
-public FigurasGeometricas removeFigura(int posicao){
-return figuras.remove(posicao);
-}
-
-public void fazCalcularArea(int posicao){
-return figuras.get(posicao).calcularArea();
-}
-
-public void fazCalcularPerimetro(int posicao){
-return figuras.get(posicao).calcularPerimetro()
-}
-
-public String getTipoFigura(){
-return figuras.get(tipo);
-}
-}
-
