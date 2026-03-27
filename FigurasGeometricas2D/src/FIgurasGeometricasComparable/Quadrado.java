@@ -1,5 +1,8 @@
+package FIgurasGeometricasComparable;
+
 public class Quadrado implements FiguraGeometrica2D {
     private double lado;
+
 
     public Quadrado(double lado) {
         this.lado = lado;
@@ -17,6 +20,13 @@ public class Quadrado implements FiguraGeometrica2D {
 
     @Override
     public String getTipo() {
-        return "Quadrado";
+        return "Comparable.FigurasGeometricas.Quadrado";
     }
+
+    @Override
+    public int compareTo(FiguraGeometrica2D o) {
+         return Double.compare(this.calculaArea(), o.calculaArea());
+    }
+
+
 }

@@ -1,3 +1,5 @@
+package FigurasGeometricas;
+
 public interface FiguraGeometrica2D {
     double calculaArea();
     double calculaPerimetro();

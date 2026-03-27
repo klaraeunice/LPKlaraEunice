@@ -1,3 +1,5 @@
+package FigurasGeometricas;
+
 public class Circulo implements FiguraGeometrica2D {
     private double raio;
 
