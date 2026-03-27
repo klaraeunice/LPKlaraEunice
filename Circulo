@@ -1,0 +1,15 @@
+public class Circulo implements FigurasGeometricas{
+private double raio;
+
+//construtor 
+
+
+public calculaArea(double raio){
+return Math.PI * raio * 2
+};
+
+public calculaPerimetro(double raio){
+return raio*2
+};
+
+}
