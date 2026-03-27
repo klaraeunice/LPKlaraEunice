@@ -1,17 +1,22 @@
-public class Quadrado implements FigurasGeometricas{
+public class Quadrado implements FiguraGeometrica2D {
+    private double lado;
 
-private double lado;
-private double tipo;
+    public Quadrado(double lado) {
+        this.lado = lado;
+    }
 
-@override
-public double calculaPerimetro(double lado){
-return lado*2;
-}
+    @Override
+    public double calculaArea() {
+        return lado * lado;
+    }
 
-@override
-public double calculaArea(double lado){
-return lado*lado;
-}
+    @Override
+    public double calculaPerimetro() {
+        return 4 * lado;
+    }
 
-
+    @Override
+    public String getTipo() {
+        return "Quadrado";
+    }
 }
