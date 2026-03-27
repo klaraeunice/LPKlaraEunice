@@ -1,0 +1,15 @@
+package FigurasGeometricas;
+
+public class FiguraGeometrica {
+
+public double calculaPerimetro(){
+return 0;
+} 
+public double calculaArea(){
+return 0;
+}
+public String TipoFigura(){
+return Tipo;
+}
+
+}
