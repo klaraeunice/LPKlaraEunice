@@ -1,0 +1,17 @@
+public class Quadrado implements FigurasGeometricas{
+
+private double lado;
+private double tipo;
+
+@override
+public double calculaPerimetro(double lado){
+return lado*2;
+}
+
+@override
+public double calculaArea(double lado){
+return lado*lado;
+}
+
+
+}
