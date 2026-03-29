@@ -1,0 +1,44 @@
+Petshop
+Você tem um petshop que oferece três serviços: banho, hotelzinho e tosa.
+
+--------------------BANHO
+Todo banho é um serviço com código, e mantem a data do serviço, o tamanho do animal (PEQUENO, MÉDIO ou GRANDE), o tamanho do pêlo do animal (LONGO, MÉDIO, CURTO) e o preço. O preço do banho depende do tamanho do animal e do tamanho do pêlo (ver tabela de preços mais abaixo)..
+
+animal PEQUENO (R$ 50,00)
+- pêlo curto: R$ 50,00
+- pêlo médio (adiciona R$15,0): R$ 65,00
+- pelo longo (adiciona R$25,00): R$ 75,00
+
+animal MÉDIO (R$ 60,00)
+- pêlo curto: R$ 60,00
+- pêlo médio (adiciona R$15,0): R$ 75,00
+- pelo longo (adiciona R$25,00): R$ 85,00
+
+animal GRANDE (R$ 70,00)
+- pêlo curto: R$ 70,00
+- pêlo médio (adiciona R$15,0): R$ 85,00
+- pelo longo (adiciona R$25,00): R$ 95,00
+
+--------------------HOTELZINHO
+O outro serviço é o de manter o animal no hotelzinho por uma certa quantidade de horas. Pra esse serviço é necessário armazenar código, a data do serviço, o tamanho do animal
+
+(PEQUENO, MÉDIO ou GRANDE), a quantidade de horas que o animal vai ficar no hotelzinho e o preço. O preço depende da quantidade de horas e do tamanho do animal:
+
+1h para animal pequeno: R$12,00
+1h para animal médio: R$18,00
+1h para animal grande: R$25,00
+
+--------------------TOSA
+O outro serviço a ser ofertado é o de tosa. Este serviço mantem código, o tamanho do animal (PEQUENO, MÉDIO ou GRANDE), a data e o preço. O preço deste serviço é calculado com base no tamanho do animal:
+
+para animal pequeno: R$30,00
+para animal médio: R$40,00
+para animal grande: R$50,00
+
+creva as classes que representam os serviços e o inventario de serviços. Use o que você aprendeu até agora para bolar o melhor design.
+
+Dicas:
+
+1. Idealmente, você vai precisar de uma interface, uma classe abstrata e mais 3 subclasses dela. ;)
+
+2. use ENUM para facilitar sua implementação.
