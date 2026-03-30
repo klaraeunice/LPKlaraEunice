@@ -1,20 +1,35 @@
 package petshop;
+
 import java.time.LocalDate;
 
+interface ServicoInterface {
 
-public class Servico {
-    public int cod;
-    public LocalDate data;
-    public TAMANHO tamanho;
-    public double preco;
+    double calcularPreco ();
 
-    public Servico(int cod, LocalDate data, TAMANHO tamanho, double preco) {
-        this.cod = cod;
+}
+
+abstract class Servico implements ServicoInterface{
+    protected String codigo;
+    protected LocalDate data;
+    protected TamanhoAnimal tamanhoAnimal;
+
+
+    public Servico(String codigo, LocalDate data, TamanhoAnimal tamanhoAnimal) {
+        this.codigo = codigo;
         this.data = data;
-        this.tamanho = tamanho;
-        this.preco = preco;
+        this.tamanhoAnimal = tamanhoAnimal;
     }
 
 
+    public String getCodigo() {
+        return codigo;
+    }
 
+    public LocalDate getData() {
+        return data;
+    }
+
+    public TamanhoAnimal getTamanhoAnimal() {
+        return tamanhoAnimal;
+    }
 }
